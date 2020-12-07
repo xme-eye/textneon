@@ -1,0 +1,64 @@
+.text span{
+    font-size: calc(20px + 18vh);
+    line-height:  calc( 20px + 20vh);
+    text-shadow: 0 0 5px #e61940,
+                 0 0 15px #e61940 ,
+                 0 0 20px #e61940,
+                 0 0 40px #e61940,
+                 0 0 60px #ff0000,
+                 0 0 10px #f5f6fa,
+                  0 0 98px #ff0000
+                 ;
+    color: #f5f6fa;
+    font-family: 'pacifico', cursive;
+    text-align: center;
+    animation:  neonEffect 10s infinite;
+}
+body{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+@-webkit-keyframes neonEffect {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        text-shadow:  0 0 5px #e61940,
+                     0 0 19px #e61940,
+                     0 0 20px #e61940 ,
+                     0 0 40px #e61940,
+                     0 0 60px #e61940,
+                     0 0 10px #f5f6fa,
+                     0 0 98px #ff0000;
+        color: #f5f6fa;
+
+    }
+}
+
+@keyframes neonEffect{
+    20%,
+    24%,
+    55%{
+        color: #111;
+        text-shadow: none;
+
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        text-shadow:  0 0 5px #e61940,
+                     0 0 19px #e61940,
+                     0 0 20px #e61940 ,
+                     0 0 40px #e61940,
+                     0 0 60px #e61940,
+                     0 0 10px #f5f6fa,
+                     0 0 98px #ff0000;
+        color: #f5f6fa;
+
+    }
+}
